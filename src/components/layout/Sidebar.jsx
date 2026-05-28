@@ -4,13 +4,13 @@ import { navigationItems } from '../../data/dashboardData'
 
 function Sidebar() {
   return (
-    <aside className="fixed inset-y-0 left-0 z-30 flex w-20 flex-col border-r border-emerald-400/10 bg-[linear-gradient(180deg,#03110b_0%,#062016_52%,#020806_100%)] text-white shadow-2xl shadow-black/50 lg:w-72">
-      <div className="flex h-16 items-center justify-center gap-3 border-b border-emerald-300/10 px-3 lg:justify-start lg:px-5">
-        <div className="grid size-10 place-items-center rounded-lg bg-gradient-to-br from-emerald-400 to-lime-300 text-emerald-950 shadow-lg shadow-emerald-500/20">
+    <aside className="fixed inset-y-0 left-0 z-30 flex w-20 flex-col border-r border-[#0b3f24] bg-[#06391f] text-white shadow-xl shadow-[#06391f]/25 lg:w-72">
+      <div className="flex h-16 items-center justify-center gap-3 border-b border-white/10 px-3 lg:justify-start lg:px-5">
+        <div className="grid size-10 place-items-center rounded-lg bg-[#f7faf4] text-[#0b6e34] shadow-sm">
           <Leaf className="size-5" aria-hidden="true" />
         </div>
         <div className="hidden lg:block">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-300">Plantation</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a8d18d]">Plantation</p>
           <h1 className="text-lg font-semibold tracking-normal">Control Room</h1>
         </div>
       </div>
@@ -25,8 +25,8 @@ function Sidebar() {
             className={({ isActive }) =>
               `group flex h-11 items-center justify-center gap-3 rounded-lg px-3 text-sm font-medium transition duration-200 lg:justify-start ${
                 isActive
-                ? 'bg-gradient-to-r from-emerald-400 to-lime-300 text-emerald-950 shadow-lg shadow-emerald-500/20'
-                : 'text-emerald-100/80 hover:bg-white/[0.08] hover:text-white hover:shadow-md hover:shadow-emerald-950/30'
+                ? 'bg-[#0f8a3b] text-white shadow-md shadow-black/15'
+                : 'text-white/78 hover:bg-white/10 hover:text-white'
               }`
             }
           >
@@ -36,13 +36,13 @@ function Sidebar() {
         ))}
       </nav>
 
-      <div className="hidden border-t border-emerald-300/10 p-4 lg:block">
-        <div className="rounded-lg border border-emerald-300/10 bg-white/[0.06] p-3 shadow-inner">
+      <div className="hidden border-t border-white/10 p-4 lg:block">
+        <div className="rounded-lg border border-white/10 bg-white/[0.07] p-3 shadow-sm">
           <div className="flex items-center gap-2">
-            <span className="size-2 rounded-full bg-lime-300 shadow-[0_0_14px_rgba(190,242,100,.9)]" />
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-200">System Online</p>
+            <span className="size-2 rounded-full bg-[#a8d18d]" />
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#d8ead0]">System Online</p>
           </div>
-          <p className="mt-2 text-xs leading-5 text-emerald-100/75">Primary plantation modules are connected.</p>
+          <p className="mt-2 text-xs leading-5 text-white/72">Primary plantation modules are connected.</p>
         </div>
       </div>
     </aside>

@@ -9,10 +9,10 @@ function CameraMonitoring() {
         {cameraFeeds.map((feed) => (
           <article
             key={feed.name}
-            className="group min-w-72 snap-start overflow-hidden rounded-lg border border-white/70 bg-white/75 shadow-sm shadow-emerald-950/5 transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-950/10"
+            className="group min-w-72 snap-start overflow-hidden rounded-lg border border-[#dfe7d8] bg-white shadow-[0_8px_22px_rgba(18,64,39,0.07)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(18,64,39,0.11)]"
           >
-            <div className={`relative h-36 bg-gradient-to-br ${feed.tone}`}>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,.22),transparent_28%),linear-gradient(135deg,rgba(255,255,255,.12)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.12)_50%,rgba(255,255,255,.12)_75%,transparent_75%)] bg-[size:auto,34px_34px]" />
+            <div className={`relative h-36 ${feed.tone}`}>
+              <div className="absolute inset-x-0 bottom-0 h-10 bg-black/15" />
               <span className="live-pulse absolute left-3 top-3 rounded-md bg-red-500 px-2 py-1 text-xs font-bold text-white">LIVE</span>
               <div className="absolute inset-0 grid place-items-center text-white/80">
                 <Camera className="size-9 transition group-hover:scale-110" aria-hidden="true" />

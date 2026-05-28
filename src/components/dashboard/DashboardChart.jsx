@@ -26,9 +26,9 @@ const seriesComponents = {
 
 const variantStyles = {
   light: {
-    card: 'rounded-lg border border-white/70 bg-white/75 p-3 shadow-sm transition hover:border-emerald-200 hover:bg-white/90',
+    card: 'rounded-lg border border-[#dfe7d8] bg-white p-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)] transition hover:border-[#c9dcc0] hover:shadow-[0_12px_30px_rgba(18,64,39,0.11)]',
     title: 'text-xs font-semibold uppercase tracking-[0.14em] text-slate-600',
-    grid: '#e2e8f0',
+    grid: '#dfe7d8',
     axis: '#64748b',
     tooltip: {
       backgroundColor: '#ffffff',
@@ -38,15 +38,15 @@ const variantStyles = {
     },
   },
   dark: {
-    card: 'rounded-lg border border-slate-800 bg-slate-950/90 p-4 shadow-inner',
-    title: 'text-xs font-semibold uppercase tracking-[0.14em] text-emerald-100/80',
-    grid: 'rgba(148, 163, 184, 0.18)',
-    axis: '#cbd5e1',
+    card: 'rounded-lg border border-[#dfe7d8] bg-white p-4 shadow-[0_8px_22px_rgba(18,64,39,0.07)]',
+    title: 'text-xs font-semibold uppercase tracking-[0.14em] text-slate-600',
+    grid: '#dfe7d8',
+    axis: '#64748b',
     tooltip: {
-      backgroundColor: '#0f172a',
-      border: '1px solid rgba(148, 163, 184, 0.35)',
+      backgroundColor: '#ffffff',
+      border: '1px solid #dfe7d8',
       borderRadius: 8,
-      color: '#f8fafc',
+      color: '#0f172a',
     },
   },
 }

@@ -78,10 +78,10 @@ export const irrigationSummary = [
 ]
 
 export const cameraFeeds = [
-  { name: 'North Gate', time: '16:42:18', location: 'Entry road', tone: 'from-emerald-900 to-lime-800' },
-  { name: 'Pump House', time: '16:41:52', location: 'Irrigation hub', tone: 'from-slate-900 to-emerald-800' },
-  { name: 'Block C', time: '16:41:34', location: 'Mango field', tone: 'from-amber-900 to-emerald-900' },
-  { name: 'East Fence', time: '16:40:59', location: 'Perimeter line', tone: 'from-sky-950 to-emerald-900' },
+  { name: 'North Gate', time: '16:42:18', location: 'Entry road', tone: 'bg-[#315f2b]' },
+  { name: 'Pump House', time: '16:41:52', location: 'Irrigation hub', tone: 'bg-[#123926]' },
+  { name: 'Block C', time: '16:41:34', location: 'Mango field', tone: 'bg-[#7a641b]' },
+  { name: 'East Fence', time: '16:40:59', location: 'Perimeter line', tone: 'bg-[#0b4f2e]' },
 ]
 
 export const sensorReadings = [

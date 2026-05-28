@@ -6,7 +6,7 @@ function SensorsPanel() {
     <SectionCard title="Environmental Sensors" subtitle="Live readings from field sensor mesh.">
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
         {sensorReadings.map(({ label, value, icon: Icon, tone }) => (
-          <article key={label} className="group rounded-lg border border-white/70 bg-white/75 p-3 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-white/90">
+          <article key={label} className="group rounded-lg border border-[#dfe7d8] bg-white p-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)] transition duration-200 hover:-translate-y-0.5 hover:border-[#c9dcc0] hover:shadow-[0_12px_30px_rgba(18,64,39,0.11)]">
             <div className={`grid size-9 place-items-center rounded-lg shadow-inner transition group-hover:scale-105 ${tone}`}>
               <Icon className="size-4.5" aria-hidden="true" />
             </div>

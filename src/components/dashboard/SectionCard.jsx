@@ -1,6 +1,6 @@
 function SectionCard({ title, subtitle, action, children, className = '' }) {
   return (
-    <section className={`rounded-lg border border-white/65 bg-white/70 p-4 shadow-sm shadow-emerald-950/5 backdrop-blur-xl transition duration-200 hover:bg-white/80 hover:shadow-lg hover:shadow-emerald-950/10 ${className}`}>
+    <section className={`rounded-lg border border-[#dfe7d8] bg-white p-4 shadow-[0_10px_28px_rgba(18,64,39,0.08)] transition duration-200 hover:shadow-[0_14px_34px_rgba(18,64,39,0.12)] ${className}`}>
       {(title || subtitle || action) && (
         <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
           <div>

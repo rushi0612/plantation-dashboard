@@ -11,7 +11,7 @@ function AlertsPanel() {
     >
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
         {alerts.map((alert) => (
-          <article key={`${alert.level}-${alert.time}`} className="rounded-lg border border-white/70 bg-white/75 p-3 shadow-sm transition hover:border-emerald-200 hover:bg-white/90">
+          <article key={`${alert.level}-${alert.time}`} className="rounded-lg border border-[#dfe7d8] bg-white p-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)] transition hover:border-[#c9dcc0] hover:shadow-[0_12px_30px_rgba(18,64,39,0.11)]">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <span className={`size-2.5 rounded-full ${alert.color} shadow-[0_0_14px_rgba(248,113,113,.55)]`} />
