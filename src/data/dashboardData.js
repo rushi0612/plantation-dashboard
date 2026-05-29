@@ -64,10 +64,56 @@ export const metricCards = [
 ]
 
 export const mapZones = [
-  { name: 'A1', crop: 'Coconut', status: 'Irrigating', position: 'left-[10%] top-[16%]', color: 'bg-emerald-500' },
-  { name: 'B2', crop: 'Areca', status: 'Ready', position: 'left-[42%] top-[18%]', color: 'bg-lime-500' },
-  { name: 'C3', crop: 'Mango', status: 'Low flow', position: 'left-[22%] top-[58%]', color: 'bg-amber-500' },
-  { name: 'D4', crop: 'Banana', status: 'Scheduled', position: 'left-[66%] top-[54%]', color: 'bg-sky-500' },
+  {
+    name: 'Zone 1',
+    crop: 'Coconut',
+    acreage: '1.20 acres',
+    status: 'Healthy',
+    health: '92%',
+    layout: 'col-span-1 row-span-2 sm:col-span-2 sm:row-span-3',
+    tone: 'from-emerald-700/90 to-emerald-500/80',
+    ring: 'ring-emerald-300/60',
+  },
+  {
+    name: 'Zone 2',
+    crop: 'Areca',
+    acreage: '1.35 acres',
+    status: 'Moderate',
+    health: '76%',
+    layout: 'col-span-1 row-span-2 sm:col-span-2 sm:row-span-2',
+    tone: 'from-yellow-700/90 to-lime-600/75',
+    ring: 'ring-yellow-200/60',
+  },
+  {
+    name: 'Zone 3',
+    crop: 'Mango',
+    acreage: '1.10 acres',
+    status: 'Healthy',
+    health: '88%',
+    layout: 'col-span-1 row-span-2 sm:col-span-2 sm:row-span-4',
+    tone: 'from-green-800/90 to-green-600/80',
+    ring: 'ring-green-200/60',
+  },
+  {
+    name: 'Zone 4',
+    crop: 'Banana',
+    acreage: '1.25 acres',
+    status: 'Needs water',
+    health: '64%',
+    layout: 'col-span-1 row-span-3 sm:col-span-2 sm:row-span-3',
+    tone: 'from-orange-800/90 to-amber-600/80',
+    ring: 'ring-amber-200/60',
+  },
+  {
+    name: 'Zone 5',
+    crop: 'Mixed crop',
+    acreage: '2.10 acres',
+    status: 'Healthy',
+    health: '90%',
+    layout: 'col-span-1 row-span-2 sm:col-span-2 sm:row-span-2',
+    tone: 'from-emerald-800/90 to-green-500/80',
+    ring: 'ring-emerald-200/60',
+  },
 ]
 
 export const irrigationSummary = [
