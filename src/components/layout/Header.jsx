@@ -1,4 +1,4 @@
-import { CloudSun, Search } from 'lucide-react'
+import { Building2, CalendarClock, CloudSun, Leaf } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 function Header() {
@@ -10,9 +10,9 @@ function Header() {
   }, [])
 
   const date = new Intl.DateTimeFormat('en-IN', {
-    weekday: 'short',
-    day: '2-digit',
-    month: 'short',
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
     year: 'numeric',
   }).format(now)
 
@@ -23,29 +23,52 @@ function Header() {
   }).format(now)
 
   return (
-    <header className="lg:sticky lg:top-0 z-20 border-b border-[#dfe7d8] bg-[#f8faf5]/95 px-4 py-4 backdrop-blur lg:px-8">
-      <div className="grid gap-3 xl:grid-cols-[1fr_auto_auto] xl:items-center">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6e34]">Smart Agriculture Operations</p>
-          <h2 className="mt-0.5 text-xl font-semibold tracking-normal text-slate-950">Plantation Monitoring Dashboard</h2>
+    <header className="lg:sticky lg:top-0 z-20 border-b border-[#dfe7d8] bg-white px-4 py-4 shadow-sm lg:px-8">
+      <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-center">
+        <div className="flex min-w-0 items-center gap-4">
+          <div className="grid size-14 shrink-0 place-items-center rounded-xl border border-[#c9dcc0] bg-[#f4f7f2] text-[#0b6e34] shadow-sm sm:size-16">
+            <Leaf className="size-8" aria-hidden="true" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0b6e34]">JustGrow Smart RMS System</p>
+            <h1 className="mt-1 text-2xl font-bold tracking-normal text-[#082719] sm:text-3xl">
+              Plantation Monitoring System
+            </h1>
+            <p className="mt-1 max-w-2xl text-sm font-medium text-slate-600">
+              Real-time plantation control room for irrigation, sensors, field teams, and alerts.
+            </p>
+          </div>
         </div>
 
-        <div className="hidden h-10 min-w-72 items-center gap-3 rounded-lg border border-[#dfe7d8] bg-white px-3 text-sm text-slate-500 shadow-sm md:flex">
-          <Search className="size-4" aria-hidden="true" />
-          <span>Search zones, sensors, reports</span>
-        </div>
-
-        <div className="grid gap-2 sm:grid-cols-2 xl:min-w-96">
-          <div className="flex items-center gap-3 rounded-lg border border-[#dfe7d8] bg-white px-3 py-2.5 shadow-sm">
-            <CloudSun className="size-5 text-amber-600" aria-hidden="true" />
+        <div className="grid gap-3 md:grid-cols-3 xl:min-w-[42rem]">
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+            <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#eef6e9] text-[#0b6e34]">
+              <Building2 className="size-5" aria-hidden="true" />
+            </div>
             <div>
-              <p className="text-sm font-semibold text-slate-900">31 C - Clear</p>
-              <p className="text-xs text-slate-500">Humidity 62% - Wind 8 km/h</p>
+              <p className="text-sm font-bold text-slate-950">MHADA Office</p>
+              <p className="text-xs font-medium text-slate-500">Monitoring Control Room</p>
             </div>
           </div>
-          <div className="rounded-lg border border-[#dfe7d8] bg-white px-3 py-2.5 text-right shadow-sm">
-            <p className="text-sm font-semibold text-slate-900">{date}</p>
-            <p className="text-xs text-slate-500">{time}</p>
+
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+            <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#f8faf5] text-[#0b6e34]">
+              <CalendarClock className="size-5" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-slate-950">{date}</p>
+              <p className="text-xs font-medium text-slate-500">{time}</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+            <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-amber-50 text-amber-600">
+              <CloudSun className="size-6" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-slate-950">31 C</p>
+              <p className="text-xs font-medium text-slate-500">Clear - Humidity 62%</p>
+            </div>
           </div>
         </div>
       </div>
