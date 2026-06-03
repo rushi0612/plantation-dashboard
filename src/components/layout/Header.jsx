@@ -23,37 +23,37 @@ function Header() {
   }).format(now)
 
   return (
-    <header className="lg:sticky lg:top-0 z-20 border-b border-[#dfe7d8] bg-white px-4 py-4 shadow-sm lg:px-8">
+    <header className="z-20 border-b border-[#dfe7d8] bg-white px-4 py-2 shadow-sm lg:px-6">
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-center">
         <div className="flex min-w-0 items-center gap-4">
-          <div className="grid size-14 shrink-0 place-items-center rounded-xl border border-[#c9dcc0] bg-[#f4f7f2] text-[#0b6e34] shadow-sm sm:size-16">
-            <Leaf className="size-8" aria-hidden="true" />
+          <div className="grid size-12 shrink-0 place-items-center rounded-xl border border-[#c9dcc0] bg-[#f4f7f2] text-[#0b6e34] shadow-sm sm:size-14">
+            <Leaf className="size-" aria-hidden="true" />
           </div>
           <div className="min-w-0">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0b6e34]">JustGrow Smart RMS System</p>
-            <h1 className="mt-1 text-2xl font-bold tracking-normal text-[#082719] sm:text-3xl">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#0b6e34]">Smart Agriculture Operations Platform</p>
+            <h1 className="text-xl font-bold tracking-normal text-[#082719] sm:text-2xl">
               Plantation Monitoring System
             </h1>
-            <p className="mt-1 max-w-2xl text-sm font-medium text-slate-600">
+            <p className="max-w-2xl text-xs font-medium text-slate-600">
               Real-time plantation control room for irrigation, sensors, field teams, and alerts.
             </p>
           </div>
         </div>
 
-        <div className="grid gap-3 md:grid-cols-3 xl:min-w-[42rem]">
-          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 xl:min-w-[38rem]">
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-3 py-2 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
             <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#eef6e9] text-[#0b6e34]">
               <Building2 className="size-5" aria-hidden="true" />
             </div>
             <div>
-              <p className="text-sm font-bold text-slate-950">MHADA Office</p>
-              <p className="text-xs font-medium text-slate-500">Monitoring Control Room</p>
+              <p className="text-sm font-bold text-slate-950">Plantation Operations Center</p>
+              <p className="text-xs font-medium text-slate-500">Field Monitoring Hub</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-3 py-2 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
             <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#f8faf5] text-[#0b6e34]">
-              <CalendarClock className="size-5" aria-hidden="true" />
+              <CalendarClock className="size-4" aria-hidden="true" />
             </div>
             <div>
               <p className="text-sm font-bold text-slate-950">{date}</p>
@@ -61,7 +61,7 @@ function Header() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-4 py-3 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
+          <div className="flex items-center gap-3 rounded-xl border border-[#dfe7d8] bg-white px-3 py-2 shadow-[0_8px_22px_rgba(18,64,39,0.07)]">
             <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-amber-50 text-amber-600">
               <CloudSun className="size-6" aria-hidden="true" />
             </div>
